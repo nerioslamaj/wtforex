@@ -5,6 +5,7 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "test:e2e": "cypress run --record --key 3750fbbc-6415-4544-a80d-cb9dae20403c",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
@@ -12,7 +13,9 @@
     "vue": "^2.6.11"
   },
   "devDependencies": {
+    "@percy/cypress": "^2.3.1",
     "@vue/cli-plugin-babel": "~4.4.0",
+    "@vue/cli-plugin-e2e-cypress": "^4.4.6",
     "@vue/cli-plugin-eslint": "~4.4.0",
     "@vue/cli-service": "~4.4.0",
     "babel-eslint": "^10.1.0",
