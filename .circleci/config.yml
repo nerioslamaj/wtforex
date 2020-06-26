@@ -17,4 +17,4 @@ workflows:
       - build-and-test:
           filters:
             branches:
-              only: develop
+              only: master
