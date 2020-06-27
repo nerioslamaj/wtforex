@@ -5,8 +5,10 @@ jobs:
   build-and-test:
     executor: node/default
     steps:
+      - checkout
       - node/with-cache:
           steps:
+            - run: sudo apt-get install libgtk2.0-0 libgtk-3-0 libnotify-dev libgconf-2-4 libnss3 libxss1 libasound2 libxtst6 xauth xvfb
             - run: npm install
             - run: npm run test:e2e
 workflows:
@@ -16,4 +18,6 @@ workflows:
       - build-and-test:
           filters:
             branches:
-              only: staging
+              only:
+              - staging
+              - /ci-.*/
