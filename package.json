@@ -5,7 +5,7 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "test:e2e": "PERCY_TOKEN=${PERCY_KEY} percy exec -- cypress run --record --key ${CYPRESS_KEY}",
+    "test:e2e": "PERCY_TOKEN=${PERCY_KEY} $(npm bin)/percy exec -- $(npm bin)/cypress run --record --key ${CYPRESS_KEY}",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
