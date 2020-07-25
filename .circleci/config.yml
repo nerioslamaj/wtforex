@@ -1,7 +1,18 @@
 version: 2.1
 orbs:
   cypress: cypress-io/cypress@1.25.1
+  node: circleci/node@3.0.1
 workflows:
+  unit-tests:
+    jobs:
+      - test:
+          executor: node/default
+          steps:
+            - checkout
+            - node/install-packages:
+                cache-path: ~/wtforex/node_modules
+                override-ci-command: npm install
+            - run: npm run test
   e2e:
     jobs:
       - cypress/install:
