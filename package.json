@@ -69,7 +69,7 @@
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
     "test": "node scripts/test.js",
-    "test:e2e": "PERCY_TOKEN=5e51d2d429dc58d0944bfffef3b8fe1077538e8886d55c6f5fdb52e51dc2801f percy exec -- cypress run --record --key 3750fbbc-6415-4544-a80d-cb9dae20403c"
+    "test:e2e": "PERCY_TOKEN=${PERCY_KEY} percy exec -- cypress run --record --key ${CYPRESS_KEY}"
   },
   "eslintConfig": {
     "extends": "react-app"
