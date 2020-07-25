@@ -13,7 +13,7 @@ jobs:
             - run: npm install
 workflows:
   version: 2
-  deploy-job:
+  build_and_test:
     jobs:
       - build-and-test:
           filters:
