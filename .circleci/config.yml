@@ -4,8 +4,16 @@ orbs:
 workflows:
   e2e:
     jobs:
-      - cypress/install
+      - cypress/install:
+          filters:
+            branches:
+              only:
+                - master
       - cypress/run:
+          filters:
+            branches:
+              only:
+                - master
           record: true
           requires:
             - cypress/install
