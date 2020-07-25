@@ -23,8 +23,14 @@ workflows:
                 - staging
                 - /ci-.*/
 
-  e2e:
+  e2e-tests:
     jobs:
+      - cypress/install:
+          filters:
+            branches:
+              only:
+                - staging
+                - /ci-.*/
       - cypress/run:
           filters:
             branches:
