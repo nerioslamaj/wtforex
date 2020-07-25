@@ -4,5 +4,6 @@
   ],
   "baseBranches": [
     "staging"
-  ]
+  ],
+  "rebaseWhen": "behind-base-branch"
 }

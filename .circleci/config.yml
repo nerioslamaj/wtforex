@@ -8,12 +8,14 @@ workflows:
           filters:
             branches:
               only:
-                - master
+                - staging
+                - /ci-.*/
       - cypress/run:
           filters:
             branches:
               only:
-                - master
+                - staging
+                - /ci-.*/
           record: true
           requires:
             - cypress/install
