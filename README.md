@@ -1,3 +1,8 @@
+[![nerioslamaj](https://circleci.com/gh/nerioslamaj/wtforex.svg?style=svg)](https://app.circleci.com/pipelines/github/nerioslamaj/wtforex)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/00b51c34-5574-4a60-9cee-06f7c920451f/deploy-status)](https://app.netlify.com/sites/awesome-curie-ee7dbc/deploys)
+[![This project is using Cypress for integration tests.](https://img.shields.io/badge/cypress-dashboard-brightgreen.svg)](https://dashboard.cypress.io/projects/33u7nq/)
+[![This project is using Percy.io for visual regression testing.](https://percy.io/static/images/percy-badge.svg)](https://percy.io/nerios-dev/wtforex)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
