@@ -8,3 +8,4 @@ workflows:
       - cypress/run:
           requires:
             - cypress/install
+          command-prefix: PERCY_TOKEN=${PERCY_KEY} npx percy exec --
