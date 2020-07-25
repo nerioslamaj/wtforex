@@ -2,7 +2,7 @@ version: 2.1
 orbs:
   cypress: cypress-io/cypress@1
 workflows:
-  build:
+  e2e:
     jobs:
       - cypress/install
       - cypress/run:
