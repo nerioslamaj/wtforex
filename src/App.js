@@ -8,7 +8,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          This is the Forex API: <code>{process.env.REACT_APP_FOREX_API}</code>
         </p>
         <a
           className="App-link"
