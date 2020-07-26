@@ -1,5 +1,6 @@
 import React from 'react';
 import logo from './logo.svg';
+import GLOBAL from './global.js';
 import './App.css';
 
 function App() {
@@ -8,7 +9,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          This is the Forex API: <code>{ process.env.REACT_APP_FOREX_API }</code>
+          The forex API is: <code>{ GLOBAL.forexApi }</code>
         </p>
         <a
           className="App-link"
