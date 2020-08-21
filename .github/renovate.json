@@ -5,5 +5,11 @@
   "baseBranches": [
     "staging"
   ],
-  "rebaseWhen": "behind-base-branch"
+  "rebaseWhen": "conflicted",
+  "packageRules": [
+    {
+      "updateTypes": ["minor", "patch", "pin", "digest"],
+      "automerge": true
+    }
+  ]
 }
