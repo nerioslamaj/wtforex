@@ -1,13 +1,13 @@
 import React from 'react';
 import logo from './logo.svg';
 import axios from 'axios'
-import GLOBAL from './global.js';
+import GLOBAL from './global';
 import './App.scss';
 
-class App extends React.Component {
+class App extends React.Component<any, any> {
 
-  constructor() {
-    super();
+  constructor(props: any) {
+    super(props);
     this.state = {
       serverResponse: 0
     }
