@@ -20,7 +20,7 @@
   },
   "devDependencies": {
     "@percy/cypress": "2.3.2",
-    "cypress": "5.4.0"
+    "cypress": "5.5.0"
   },
   "scripts": {
     "start": "react-scripts start",
